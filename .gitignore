@@ -1,0 +1,17 @@
+# Local runtime config
+.env
+
+# Per-instance data: user profiles, passkeys, session secret, per-user state.
+# Generated/populated at runtime — never commit real user data or secrets.
+data/
+
+# Exercise media, fetched by `docker compose up` (see docker-compose.yml `media` service)
+media/img/
+media/gif/
+
+# OS cruft
+.DS_Store
+
+# Dependencies / build output
+node_modules/
+frontend/dist/
